@@ -31,7 +31,7 @@ class TestGetConfiguration:
 
         configuration = get_configuration()
 
-        assert configuration.api_name == settings.BK_APIGW_NAME
+        assert configuration.gateway_name == settings.BK_APIGW_NAME
 
     def test_app_secret(self, settings, faker):
         settings.BK_APP_SECRET = faker.color()

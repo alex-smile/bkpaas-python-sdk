@@ -18,6 +18,11 @@ repos:
         # Set language to disable pre-commit's virtual-env
         language: system
         types: [python]
+        exclude: >
+          (?x)^(
+              .*/apigw-manager/.*
+              | .*/bkapi-client-core/.*
+          )$
         entry: poetry run isort --settings-path=pyproject.toml
       - id: black
         name: black

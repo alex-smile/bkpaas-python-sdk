@@ -33,7 +33,7 @@ class Command(PermissionCommand):
             print(
                 "Granted gateway %s permission for app code %s, dimension %s"
                 % (
-                    manager.config.api_name,
+                    manager.config.gateway_name,
                     permission["target_app_code"],
                     grant_dimension,
                 )
